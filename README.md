@@ -56,7 +56,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ##### Functions:
 
-1. [`IsArmstrong`](./math/armstrong/isarmstrong.go#L14): No description provided.
+1. [`IsArmstrong`](./math/armstrong/isarmstrong.go#L16): No description provided.
 
 ---
 </details><details>
@@ -69,18 +69,18 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 ---
 ##### Functions:
 
-1. [`Abs`](./math/binary/abs.go#L10):  Abs returns absolute value using binary operation Principle of operation: 1) Get the mask by right shift by the base 2) Base is the size of an integer variable in bits, for example, for int32 it will be 32, for int64 it will be 64 3) For negative numbers, above step sets mask as 1 1 1 1 1 1 1 1 and 0 0 0 0 0 0 0 0 for positive numbers. 4) Add the mask to the given number. 5) XOR of mask + n and mask gives the absolute value.
-2. [`BitCounter`](./math/binary/bitcounter.go#L11):  BitCounter - The function returns the number of set bits for an unsigned integer number
-3. [`FastInverseSqrt`](./math/binary/fast_inverse_sqrt.go#L15):  FastInverseSqrt assumes that argument is always positive, and it does not deal with negative numbers. The "magic" number 0x5f3759df is hex for 1597463007 in decimals. The math.Float32bits is alias to *(*uint32)(unsafe.Pointer(&f)) and math.Float32frombits is to *(*float32)(unsafe.Pointer(&b)).
-4. [`IsPowerOfTwo`](./math/binary/checkisnumberpoweroftwo.go#L21):  IsPowerOfTwo This function uses the fact that powers of 2 are represented like 10...0 in binary, and numbers one less than the power of 2 are represented like 11...1. Therefore, using the and function:	  10...0	& 01...1	  00...0 -> 0 This is also true for 0, which is not a power of 2, for which we have to add and extra condition.
-5. [`IsPowerOfTwoLeftShift`](./math/binary/checkisnumberpoweroftwo.go#L28):  IsPowerOfTwoLeftShift This function takes advantage of the fact that left shifting a number by 1 is equivalent to multiplying by 2. For example, binary 00000001 when shifted by 3 becomes 00001000, which in decimal system is 8 or = 2 * 2 * 2
-6. [`LogBase2`](./math/binary/logarithm.go#L7):  LogBase2 Finding the exponent of n = 2**x using bitwise operations (logarithm in base 2 of n) [See more](https://en.wikipedia.org/wiki/Logarithm)
-7. [`MeanUsingAndXor`](./math/binary/arithmeticmean.go#L12):  MeanUsingAndXor This function finds arithmetic mean using "AND" and "XOR" operations
-8. [`MeanUsingRightShift`](./math/binary/arithmeticmean.go#L17):  MeanUsingRightShift This function finds arithmetic mean using right shift
-9. [`ReverseBits`](./math/binary/reversebits.go#L14):  ReverseBits This function initialized the result by 0 (all bits 0) and process the given number starting from its least significant bit. If the current bit is 1, set the corresponding most significant bit in the result and finally move on to the next bit in the input number. Repeat this till all its bits are processed.
-10. [`SequenceGrayCode`](./math/binary/rbc.go#L11):  SequenceGrayCode The function generates an "Gray code" sequence of length n
-11. [`Sqrt`](./math/binary/sqrt.go#L10): No description provided.
-12. [`XorSearchMissingNumber`](./math/binary/xorsearch.go#L11):  XorSearchMissingNumber This function finds a missing number in a sequence
+1. [`Abs`](./math/binary/abs.go#L15):  Abs returns absolute value using binary operation Principle of operation: 1) Get the mask by right shift by the base 2) Base is the size of an integer variable in bits, for example, for int32 it will be 32, for int64 it will be 64 3) For negative numbers, above step sets mask as 1 1 1 1 1 1 1 1 and 0 0 0 0 0 0 0 0 for positive numbers. 4) Add the mask to the given number. 5) XOR of mask + n and mask gives the absolute value.
+2. [`BitCounter`](./math/binary/bitcounter.go#L13):  BitCounter - The function returns the number of set bits for an unsigned integer number
+3. [`FastInverseSqrt`](./math/binary/fast_inverse_sqrt.go#L17):  FastInverseSqrt assumes that argument is always positive, and it does not deal with negative numbers. The "magic" number 0x5f3759df is hex for 1597463007 in decimals. The math.Float32bits is alias to *(*uint32)(unsafe.Pointer(&f)) and math.Float32frombits is to *(*float32)(unsafe.Pointer(&b)).
+4. [`IsPowerOfTwo`](./math/binary/checkisnumberpoweroftwo.go#L23):  IsPowerOfTwo This function uses the fact that powers of 2 are represented like 10...0 in binary, and numbers one less than the power of 2 are represented like 11...1. Therefore, using the and function:	  10...0	& 01...1	  00...0 -> 0 This is also true for 0, which is not a power of 2, for which we have to add and extra condition.
+5. [`IsPowerOfTwoLeftShift`](./math/binary/checkisnumberpoweroftwo.go#L30):  IsPowerOfTwoLeftShift This function takes advantage of the fact that left shifting a number by 1 is equivalent to multiplying by 2. For example, binary 00000001 when shifted by 3 becomes 00001000, which in decimal system is 8 or = 2 * 2 * 2
+6. [`LogBase2`](./math/binary/logarithm.go#L9):  LogBase2 Finding the exponent of n = 2**x using bitwise operations (logarithm in base 2 of n) [See more](https://en.wikipedia.org/wiki/Logarithm)
+7. [`MeanUsingAndXor`](./math/binary/arithmeticmean.go#L14):  MeanUsingAndXor This function finds arithmetic mean using "AND" and "XOR" operations
+8. [`MeanUsingRightShift`](./math/binary/arithmeticmean.go#L19):  MeanUsingRightShift This function finds arithmetic mean using right shift
+9. [`ReverseBits`](./math/binary/reversebits.go#L16):  ReverseBits This function initialized the result by 0 (all bits 0) and process the given number starting from its least significant bit. If the current bit is 1, set the corresponding most significant bit in the result and finally move on to the next bit in the input number. Repeat this till all its bits are processed.
+10. [`SequenceGrayCode`](./math/binary/rbc.go#L13):  SequenceGrayCode The function generates an "Gray code" sequence of length n
+11. [`Sqrt`](./math/binary/sqrt.go#L12): No description provided.
+12. [`XorSearchMissingNumber`](./math/binary/xorsearch.go#L13):  XorSearchMissingNumber This function finds a missing number in a sequence
 
 ---
 </details><details>
@@ -90,16 +90,15 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ##### Functions:
 
-1. [`NewLRU`](./cache/lru.go#L22): NewLRU represent initiate lru cache with capacity
-2. [`NewLFU`](./cache/lfu.go#L33): NewLFU represent initiate lfu cache with capacity
-3. [`Get`](./cache/lfu.go#L52): Get the value by key from LFU cache
-4. [`Put`](./cache/lfu.go#L66): Put the key and value in LFU cache
+1. [`NewLFU`](./cache/lfu.go#L33):  NewLFU init the LFU cache with capacity
+2. [`NewLRU`](./cache/lru.go#L30):  NewLRU represent initiate lru cache with capacity
 
 ---
 ##### Types
 
-1. [`LRU`](./cache/lru.go#L15): Default the struct of lru cache algorithm.
-2. [`LFU`](./cache/lfu.go#L19): Default the struct of lfu cache algorithm.
+1. [`LFU`](./cache/lfu.go#L19): No description provided.
+
+2. [`LRU`](./cache/lru.go#L22): No description provided.
 
 
 ---
@@ -108,13 +107,13 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
-#####  Package caesar is the shift cipher ref: https://en.wikipedia.org/wiki/Caesar_cipher
+#####  Package caesar is the shift cipher description: Caesar cipher details : Caesar cipher is a type of substitution cipher in which each letter in the plaintext is shifted a certain number of places down the alphabet. time complexity: O(n) space complexity: O(n) ref: https://en.wikipedia.org/wiki/Caesar_cipher
 
 ---
 ##### Functions:
 
-1. [`Decrypt`](./cipher/caesar/caesar.go#L27):  Decrypt decrypts by left shift of "key" each character of "input"
-2. [`Encrypt`](./cipher/caesar/caesar.go#L6):  Encrypt encrypts by right shift of "key" each character of "input"
+1. [`Decrypt`](./cipher/caesar/caesar.go#L31):  Decrypt decrypts by left shift of "key" each character of "input"
+2. [`Encrypt`](./cipher/caesar/caesar.go#L10):  Encrypt encrypts by right shift of "key" each character of "input"
 3. [`FuzzCaesar`](./cipher/caesar/caesar_test.go#L158): No description provided.
 
 ---
@@ -125,7 +124,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ##### Functions:
 
-1. [`CatalanNumber`](./math/catalan/catalannumber.go#L16):  CatalanNumber This function returns the `nth` Catalan number
+1. [`CatalanNumber`](./math/catalan/catalannumber.go#L26):  CatalanNumber This function returns the `nth` Catalan number
 
 ---
 </details><details>
@@ -138,13 +137,32 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 ---
 ##### Functions:
 
-1. [`CRC8`](./checksum/crc8.go#L25):  CRC8 calculates CRC8 checksum of the given data.
-2. [`Luhn`](./checksum/luhn.go#L11):  Luhn validates the provided data using the Luhn algorithm.
+1. [`CRC8`](./checksum/crc8.go#L27):  CRC8 calculates CRC8 checksum of the given data.
+2. [`Luhn`](./checksum/luhn.go#L13):  Luhn validates the provided data using the Luhn algorithm.
 
 ---
 ##### Types
 
-1. [`CRCModel`](./checksum/crc8.go#L15): No description provided.
+1. [`CRCModel`](./checksum/crc8.go#L17): No description provided.
+
+
+---
+</details><details>
+	<summary> <strong> circularqueue </strong> </summary>	
+
+---
+
+#####  Package queue provides an implementation of a circular queue data structure.
+
+---
+##### Functions:
+
+1. [`NewCircularQueue`](./structure/circularqueue/circularqueuearray.go#L29):  NewCircularQueue creates a new CircularQueue with the given size. Returns an error if the size is less than or equal to 0.
+
+---
+##### Types
+
+1. [`CircularQueue`](./structure/circularqueue/circularqueuearray.go#L20): No description provided.
 
 
 ---
@@ -158,7 +176,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 ---
 ##### Functions:
 
-1. [`BipartiteCheck`](./graph/coloring/bipartite.go#L40):  basically tries to color the graph in two colors if each edge connects 2 differently colored nodes the graph can be considered bipartite
+1. [`BipartiteCheck`](./graph/coloring/bipartite.go#L46):  basically tries to color the graph in two colors if each edge connects 2 differently colored nodes the graph can be considered bipartite
 
 ---
 ##### Types
@@ -191,19 +209,35 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
+##### /*
+rlecoding.go
+description: run length encoding and decoding
+details:
+Run-length encoding (RLE) is a simple form of data compression in which runs of data are stored as a single data value and count, rather than as the original run. This is useful when the data contains many repeated values. For example, the data "WWWWWWWWWWWWBWWWWWWWWWWWWBBB" can be compressed to "12W1B12W3B". The algorithm is simple and can be implemented in a few lines of code.
+time complexity: O(n)
+space complexity: O(n)
+ref: https://en.wikipedia.org/wiki/Run-length_encoding
+author(s) [ddaniel27](https://github.com/ddaniel27)
+ 
+
+---
 ##### Functions:
 
-1. [`HuffDecode`](./compression/huffmancoding.go#L104):  HuffDecode recursively decodes the binary code in, by traversing the Huffman compression tree pointed by root. current stores the current node of the traversing algorithm. out stores the current decoded string.
-2. [`HuffEncode`](./compression/huffmancoding.go#L93):  HuffEncode encodes the string in by applying the mapping defined by codes.
-3. [`HuffEncoding`](./compression/huffmancoding.go#L76):  HuffEncoding recursively traverses the Huffman tree pointed by node to obtain the map codes, that associates a rune with a slice of booleans. Each code is prefixed by prefix and left and right children are labelled with the booleans false and true, respectively.
-4. [`HuffTree`](./compression/huffmancoding.go#L33):  HuffTree returns the root Node of the Huffman tree by compressing listfreq. The compression produces the most optimal code lengths, provided listfreq is ordered, i.e.: listfreq[i] <= listfreq[j], whenever i < j.
+1. [`HuffDecode`](./compression/huffmancoding.go#L106):  HuffDecode recursively decodes the binary code in, by traversing the Huffman compression tree pointed by root. current stores the current node of the traversing algorithm. out stores the current decoded string.
+2. [`HuffEncode`](./compression/huffmancoding.go#L95):  HuffEncode encodes the string in by applying the mapping defined by codes.
+3. [`HuffEncoding`](./compression/huffmancoding.go#L78):  HuffEncoding recursively traverses the Huffman tree pointed by node to obtain the map codes, that associates a rune with a slice of booleans. Each code is prefixed by prefix and left and right children are labelled with the booleans false and true, respectively.
+4. [`HuffTree`](./compression/huffmancoding.go#L35):  HuffTree returns the root Node of the Huffman tree by compressing listfreq. The compression produces the most optimal code lengths, provided listfreq is ordered, i.e.: listfreq[i] <= listfreq[j], whenever i < j.
+5. [`RLEdecode`](./compression/rlecoding.go#L37):  RLEdecode takes a run-length encoded string and returns the original string
+6. [`RLEdecodebytes`](./compression/rlecoding.go#L67):  RLEdecodebytes takes a run-length encoded byte slice and returns the original byte slice
+7. [`RLEncode`](./compression/rlecoding.go#L22):  RLEncode takes a string and returns its run-length encoding
+8. [`RLEncodebytes`](./compression/rlecoding.go#L50):  RLEncodebytes takes a byte slice and returns its run-length encoding as a byte slice
 
 ---
 ##### Types
 
-1. [`Node`](./compression/huffmancoding.go#L17): No description provided.
+1. [`Node`](./compression/huffmancoding.go#L19): No description provided.
 
-2. [`SymbolFreq`](./compression/huffmancoding.go#L25): No description provided.
+2. [`SymbolFreq`](./compression/huffmancoding.go#L27): No description provided.
 
 
 ---
@@ -227,16 +261,16 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 ---
 ##### Functions:
 
-1. [`Base64Decode`](./conversion/base64.go#L57):  Base64Decode decodes the received input base64 string into a byte slice. The implementation follows the RFC4648 standard, which is documented at https://datatracker.ietf.org/doc/html/rfc4648#section-4
-2. [`Base64Encode`](./conversion/base64.go#L19):  Base64Encode encodes the received input bytes slice into a base64 string. The implementation follows the RFC4648 standard, which is documented at https://datatracker.ietf.org/doc/html/rfc4648#section-4
-3. [`BinaryToDecimal`](./conversion/binarytodecimal.go#L25):  BinaryToDecimal() function that will take Binary number as string, and return its Decimal equivalent as integer.
-4. [`DecimalToBinary`](./conversion/decimaltobinary.go#L32):  DecimalToBinary() function that will take Decimal number as int, and return its Binary equivalent as string.
+1. [`Base64Decode`](./conversion/base64.go#L59):  Base64Decode decodes the received input base64 string into a byte slice. The implementation follows the RFC4648 standard, which is documented at https://datatracker.ietf.org/doc/html/rfc4648#section-4
+2. [`Base64Encode`](./conversion/base64.go#L21):  Base64Encode encodes the received input bytes slice into a base64 string. The implementation follows the RFC4648 standard, which is documented at https://datatracker.ietf.org/doc/html/rfc4648#section-4
+3. [`BinaryToDecimal`](./conversion/binarytodecimal.go#L27):  BinaryToDecimal() function that will take Binary number as string, and return its Decimal equivalent as an integer.
+4. [`DecimalToBinary`](./conversion/decimaltobinary.go#L34):  DecimalToBinary() function that will take Decimal number as int, and return its Binary equivalent as a string.
 5. [`FuzzBase64Encode`](./conversion/base64_test.go#L113): No description provided.
-6. [`HEXToRGB`](./conversion/rgbhex.go#L10):  HEXToRGB splits an RGB input (e.g. a color in hex format; 0x<color-code>) into the individual components: red, green and blue
-7. [`IntToRoman`](./conversion/inttoroman.go#L17):  IntToRoman converts an integer value to a roman numeral string. An error is returned if the integer is not between 1 and 3999.
-8. [`RGBToHEX`](./conversion/rgbhex.go#L41):  RGBToHEX does exactly the opposite of HEXToRGB: it combines the three components red, green and blue to an RGB value, which can be converted to e.g. Hex
-9. [`Reverse`](./conversion/decimaltobinary.go#L22):  Reverse() function that will take string, and returns the reverse of that string.
-10. [`RomanToInt`](./conversion/romantoint.go#L40):  RomanToInt converts a roman numeral string to an integer. Roman numerals for numbers outside the range 1 to 3,999 will return an error. Nil or empty string return 0 with no error thrown.
+6. [`HEXToRGB`](./conversion/rgbhex.go#L12):  HEXToRGB splits an RGB input (e.g. a color in hex format; 0x<color-code>) into the individual components: red, green and blue
+7. [`IntToRoman`](./conversion/inttoroman.go#L23):  IntToRoman converts an integer value to a roman numeral string. An error is returned if the integer is not between 1 and 3999.
+8. [`RGBToHEX`](./conversion/rgbhex.go#L43):  RGBToHEX does exactly the opposite of HEXToRGB: it combines the three components red, green and blue to an RGB value, which can be converted to e.g. Hex
+9. [`Reverse`](./conversion/decimaltobinary.go#L24):  Reverse() function that will take string, and returns the reverse of that string.
+10. [`RomanToInt`](./conversion/romantoint.go#L42):  RomanToInt converts a roman numeral string to an integer. Roman numerals for numbers outside the range 1 to 3,999 will return an error. Nil or empty string return 0 with no error thrown.
 
 ---
 </details><details>
@@ -276,13 +310,33 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
-#####  Package diffiehellman implements Diffie-Hellman Key Exchange Algorithm for more information watch : https://www.youtube.com/watch?v=NmM9HA2MQGI
+#####  Package diffiehellman implements Diffie-Hellman Key Exchange Algorithm description: Diffie-Hellman key exchange details : Diffie-Hellman key exchange is a method of securely exchanging cryptographic keys over a public channel by combining private keys of two parties to generate a shared secret key. time complexity: O(log(n)) space complexity: O(1) for more information watch : https://www.youtube.com/watch?v=NmM9HA2MQGI
 
 ---
 ##### Functions:
 
-1. [`GenerateMutualKey`](./cipher/diffiehellman/diffiehellmankeyexchange.go#L19):  GenerateMutualKey : generates a mutual key that can be used by only alice and bob mutualKey = (shareKey^prvKey)%primeNumber
-2. [`GenerateShareKey`](./cipher/diffiehellman/diffiehellmankeyexchange.go#L13):  GenerateShareKey : generates a key using client private key , generator and primeNumber this key can be made public shareKey = (g^key)%primeNumber
+1. [`GenerateMutualKey`](./cipher/diffiehellman/diffiehellmankeyexchange.go#L23):  GenerateMutualKey : generates a mutual key that can be used by only alice and bob mutualKey = (shareKey^prvKey)%primeNumber
+2. [`GenerateShareKey`](./cipher/diffiehellman/diffiehellmankeyexchange.go#L17):  GenerateShareKey : generates a key using client private key , generator and primeNumber this key can be made public shareKey = (g^key)%primeNumber
+
+---
+</details><details>
+	<summary> <strong> dsa </strong> </summary>	
+
+---
+
+##### /*
+dsa.go
+description: DSA encryption and decryption including key generation
+details: [DSA wiki](https://en.wikipedia.org/wiki/Digital_Signature_Algorithm)
+author(s): [ddaniel27](https://github.com/ddaniel27)
+ 
+
+---
+##### Functions:
+
+1. [`New`](./cipher/dsa/dsa.go#L36):  New creates a new DSA instance
+2. [`Sign`](./cipher/dsa/dsa.go#L125):  Sign is signature generation for DSA 1. Choose a random integer k from the range [1, q-1] 2. Compute r = (g^k mod p) mod q 3. Compute s = (k^-1 * (H(m) + x*r)) mod q
+3. [`Verify`](./cipher/dsa/dsa.go#L157):  Verify is signature verification for DSA 1. Compute w = s^-1 mod q 2. Compute u1 = (H(m) * w) mod q 3. Compute u2 = (r * w) mod q 4. Compute v = ((g^u1 * y^u2) mod p) mod q 5. If v == r, the signature is valid
 
 ---
 </details><details>
@@ -290,31 +344,45 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
-#####  Package dynamic is a package of certain implementations of dynamically run algorithms.
+#####  binomialcoefficient.go description: Implementation of the binomial coefficient using dynamic programming details: The binomial coefficient C(n, k) is the number of ways to choose a subset of k elements from a set of n elements. The binomial coefficient is calculated using the formula C(n, k) = C(n-1, k-1) + C(n-1, k) with base cases C(n, 0) = C(n, n) = 1. time complexity: O(n*k) where n is the number of elements and k is the number of elements to choose space complexity: O(n*k) where n is the number of elements and k is the number of elements to choose fibonacci.go description: Implementation of the Fibonacci sequence using dynamic programming time complexity: O(n) space complexity: O(1) Package dynamic is a package of certain implementations of dynamically run algorithms. filename: traprainwater.go description: Provides a function to calculate the amount of trapped rainwater between bars represented by an elevation map using dynamic programming. details: The TrapRainWater function calculates the amount of trapped rainwater between the bars represented by the given elevation map. It uses dynamic programming to precompute the maximum height of bars to the left and right of each position. Then, it iterates through the array to calculate the amount of trapped rainwater at each position based on the minimum of the left and right maximum heights. Finally, it sums up the trapped rainwater for all positions and returns the total amount. time complexity: O(n) space complexity: O(n) author(s) [TruongNhanNguyen (SOZEL)](https://github.com/TruongNhanNguyen) See https://leetcode.com/problems/unique-paths/ time complexity: O(m*n) where m and n are the dimensions of the grid space complexity: O(m*n) where m and n are the dimensions of the grid author: Rares Mateizer (https://github.com/rares985)
 
 ---
 ##### Functions:
 
-1. [`Abbreviation`](./dynamic/abbreviation.go#L24):  Returns true if it is possible to make a equals b (if b is an abbreviation of a), returns false otherwise
-2. [`Bin2`](./dynamic/binomialcoefficient.go#L21):  Bin2 function
-3. [`CoinChange`](./dynamic/coinchange.go#L5):  CoinChange finds the number of possible combinations of coins of different values which can get to the target amount.
-4. [`CutRodDp`](./dynamic/rodcutting.go#L21):  CutRodDp solve the same problem using dynamic programming
-5. [`CutRodRec`](./dynamic/rodcutting.go#L8):  CutRodRec solve the problem recursively: initial approach
-6. [`EditDistanceDP`](./dynamic/editdistance.go#L35):  EditDistanceDP is an optimised implementation which builds on the ideas of the recursive implementation. We use dynamic programming to compute the DP table where dp[i][j] denotes the edit distance value of first[0..i-1] and second[0..j-1]. Time complexity is O(m * n) where m and n are lengths of the strings, first and second respectively.
-7. [`EditDistanceRecursive`](./dynamic/editdistance.go#L10):  EditDistanceRecursive is a naive implementation with exponential time complexity.
-8. [`IsSubsetSum`](./dynamic/subsetsum.go#L14): No description provided.
-9. [`Knapsack`](./dynamic/knapsack.go#L17):  Knapsack solves knapsack problem return maxProfit
-10. [`LongestCommonSubsequence`](./dynamic/longestcommonsubsequence.go#L13):  LongestCommonSubsequence function
-11. [`LongestIncreasingSubsequence`](./dynamic/longestincreasingsubsequence.go#L9):  LongestIncreasingSubsequence returns the longest increasing subsequence where all elements of the subsequence are sorted in increasing order
-12. [`LongestIncreasingSubsequenceGreedy`](./dynamic/longestincreasingsubsequencegreedy.go#L9):  LongestIncreasingSubsequenceGreedy is a function to find the longest increasing subsequence in a given array using a greedy approach. The dynamic programming approach is implemented alongside this one. Worst Case Time Complexity: O(nlogn) Auxiliary Space: O(n), where n is the length of the array(slice). Reference: https://www.geeksforgeeks.org/construction-of-longest-monotonically-increasing-subsequence-n-log-n/
-13. [`LpsDp`](./dynamic/longestpalindromicsubsequence.go#L25):  LpsDp function
-14. [`LpsRec`](./dynamic/longestpalindromicsubsequence.go#L20):  LpsRec function
-15. [`MatrixChainDp`](./dynamic/matrixmultiplication.go#L24):  MatrixChainDp function
-16. [`MatrixChainRec`](./dynamic/matrixmultiplication.go#L10):  MatrixChainRec function
-17. [`Max`](./dynamic/knapsack.go#L11):  Max function - possible duplicate
-18. [`NthCatalanNumber`](./dynamic/catalan.go#L13):  NthCatalan returns the n-th Catalan Number Complexity: O(n²)
-19. [`NthFibonacci`](./dynamic/fibonacci.go#L6):  NthFibonacci returns the nth Fibonacci Number
-20. [`TrapRainWater`](./dynamic/traprainwater.go#L17): Calculate the amount of trapped rainwater between bars represented by an elevation map using dynamic programming.
+1. [`Abbreviation`](./dynamic/abbreviation.go#L26):  Returns true if it is possible to make a equals b (if b is an abbreviation of a), returns false otherwise
+2. [`Bin2`](./dynamic/binomialcoefficient.go#L26):  Bin2 function
+3. [`CoinChange`](./dynamic/coinchange.go#L11):  CoinChange finds the number of possible combinations of coins of different values which can get to the target amount.
+4. [`CutRodDp`](./dynamic/rodcutting.go#L23):  CutRodDp solve the same problem using dynamic programming
+5. [`CutRodRec`](./dynamic/rodcutting.go#L10):  CutRodRec solve the problem recursively: initial approach
+6. [`DiceThrow`](./dynamic/dicethrow.go#L10):  DiceThrow returns the number of ways to get sum `sum` using `m` dice with `n` faces
+7. [`EditDistanceDP`](./dynamic/editdistance.go#L37):  EditDistanceDP is an optimised implementation which builds on the ideas of the recursive implementation. We use dynamic programming to compute the DP table where dp[i][j] denotes the edit distance value of first[0..i-1] and second[0..j-1]. Time complexity is O(m * n) where m and n are lengths of the strings, first and second respectively.
+8. [`EditDistanceRecursive`](./dynamic/editdistance.go#L12):  EditDistanceRecursive is a naive implementation with exponential time complexity.
+9. [`EggDropping`](./dynamic/eggdropping.go#L10):  EggDropping finds the minimum number of attempts needed to find the critical floor with `eggs` number of eggs and `floors` number of floors
+10. [`IsInterleave`](./dynamic/interleavingstrings.go#L10):  IsInterleave checks if string `s1` and `s2` can be interleaved to form string `s3`
+11. [`IsMatch`](./dynamic/wildcardmatching.go#L10):  IsMatch checks if the string `s` matches the wildcard pattern `p`
+12. [`IsSubsetSum`](./dynamic/subsetsum.go#L15): No description provided.
+13. [`Knapsack`](./dynamic/knapsack.go#L20):  Knapsack solves knapsack problem return maxProfit
+14. [`LongestArithmeticSubsequence`](./dynamic/longestarithmeticsubsequence.go#L10):  LongestArithmeticSubsequence returns the length of the longest arithmetic subsequence
+15. [`LongestCommonSubsequence`](./dynamic/longestcommonsubsequence.go#L16):  LongestCommonSubsequence function
+16. [`LongestIncreasingSubsequence`](./dynamic/longestincreasingsubsequence.go#L15):  LongestIncreasingSubsequence returns the longest increasing subsequence where all elements of the subsequence are sorted in increasing order
+17. [`LongestIncreasingSubsequenceGreedy`](./dynamic/longestincreasingsubsequencegreedy.go#L9):  LongestIncreasingSubsequenceGreedy is a function to find the longest increasing subsequence in a given array using a greedy approach. The dynamic programming approach is implemented alongside this one. Worst Case Time Complexity: O(nlogn) Auxiliary Space: O(n), where n is the length of the array(slice). Reference: https://www.geeksforgeeks.org/construction-of-longest-monotonically-increasing-subsequence-n-log-n/
+18. [`LongestPalindromicSubstring`](./dynamic/longestpalindromicsubstring.go#L10):  LongestPalindromicSubstring returns the longest palindromic substring in the input string
+19. [`LpsDp`](./dynamic/longestpalindromicsubsequence.go#L27):  LpsDp function
+20. [`LpsRec`](./dynamic/longestpalindromicsubsequence.go#L22):  LpsRec function
+21. [`MatrixChainDp`](./dynamic/matrixmultiplication.go#L26):  MatrixChainDp function
+22. [`MatrixChainRec`](./dynamic/matrixmultiplication.go#L12):  MatrixChainRec function
+23. [`Max`](./dynamic/knapsack.go#L14):  Max function - possible duplicate
+24. [`MaxCoins`](./dynamic/burstballoons.go#L6):  MaxCoins returns the maximum coins we can collect by bursting the balloons
+25. [`MaxSubArraySum`](./dynamic/maxsubarraysum.go#L12):  MaxSubArraySum returns the sum of the maximum subarray in the input array
+26. [`NthCatalanNumber`](./dynamic/catalan.go#L15):  NthCatalan returns the n-th Catalan Number Complexity: O(n²)
+27. [`NthFibonacci`](./dynamic/fibonacci.go#L10):  NthFibonacci returns the nth Fibonacci Number
+28. [`OptimalBST`](./dynamic/optimalbst.go#L6):  OptimalBST returns the minimum cost of constructing a Binary Search Tree
+29. [`PartitionProblem`](./dynamic/partitionproblem.go#L11):  PartitionProblem checks whether the given set can be partitioned into two subsets such that the sum of the elements in both subsets is the same.
+30. [`TilingProblem`](./dynamic/tilingproblem.go#L10):  TilingProblem returns the number of ways to tile a 2xN grid using 2x1 dominoes
+31. [`TrapRainWater`](./dynamic/traprainwater.go#L19):  TrapRainWater calculates the amount of trapped rainwater between the bars represented by the given elevation map. It uses dynamic programming to precompute the maximum height of bars to the left and right of each position. Then, it iterates through the array to calculate the amount of trapped rainwater at each position based on the minimum of the left and right maximum heights. Finally, it sums up the trapped rainwater for all positions and returns the total amount.
+32. [`UniquePaths`](./dynamic/uniquepaths.go#L8):  UniquePaths implements the solution to the "Unique Paths" problem
+33. [`WordBreak`](./dynamic/wordbreak.go#L10):  WordBreak checks if the input string can be segmented into words from a dictionary
+
 ---
 </details><details>
 	<summary> <strong> dynamicarray </strong> </summary>	
@@ -340,9 +408,28 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 ---
 ##### Functions:
 
-1. [`Iterative`](./math/factorial/factorial.go#L12):  Iterative returns the iteratively brute forced factorial of n
-2. [`Recursive`](./math/factorial/factorial.go#L21):  Recursive This function recursively computes the factorial of a number
-3. [`UsingTree`](./math/factorial/factorial.go#L30):  UsingTree This function finds the factorial of a number using a binary tree
+1. [`Iterative`](./math/factorial/factorial.go#L20):  Iterative returns the iteratively brute forced factorial of n
+2. [`Recursive`](./math/factorial/factorial.go#L32):  Recursive This function recursively computes the factorial of a number
+3. [`UsingTree`](./math/factorial/factorial.go#L44):  UsingTree This function finds the factorial of a number using a binary tree
+
+---
+</details><details>
+	<summary> <strong> fenwicktree </strong> </summary>	
+
+---
+
+#####  Fenwick Tree Data Structure for efficient range queries on an array of integers. Also known as Binary Indexed Tree. It can query the sum of any range of the array and can update the array at a specific position by adding a value to it (point update). Build: O(N) Query: O(log(N)) Update: O(log(N)) reference: https://brilliant.org/wiki/fenwick-tree/
+
+---
+##### Functions:
+
+1. [`NewFenwickTree`](./structure/fenwicktree/fenwicktree.go#L20):  NewFenwickTree creates a new Fenwick tree, initializes bit with the values of the array. Note that the queries and updates should have one based indexing.
+
+---
+##### Types
+
+1. [`FenwickTree`](./structure/fenwicktree/fenwicktree.go#L11): No description provided.
+
 
 ---
 </details><details>
@@ -352,9 +439,9 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ##### Functions:
 
-1. [`Formula`](./math/fibonacci/fibonacci.go#L42):  Formula This function calculates the n-th fibonacci number using the [formula](https://en.wikipedia.org/wiki/Fibonacci_number#Relation_to_the_golden_ratio) Attention! Tests for large values fall due to rounding error of floating point numbers, works well, only on small numbers
-2. [`Matrix`](./math/fibonacci/fibonacci.go#L15):  Matrix This function calculates the n-th fibonacci number using the matrix method. [See](https://en.wikipedia.org/wiki/Fibonacci_number#Matrix_form)
-3. [`Recursive`](./math/fibonacci/fibonacci.go#L51):  Recursive calculates the n-th fibonacci number recursively by adding the previous two Fibonacci numbers. This algorithm is extremely slow for bigger numbers, but provides a simpler implementation.
+1. [`Formula`](./math/fibonacci/fibonacci.go#L44):  Formula This function calculates the n-th fibonacci number using the [formula](https://en.wikipedia.org/wiki/Fibonacci_number#Relation_to_the_golden_ratio) Attention! Tests for large values fall due to rounding error of floating point numbers, works well, only on small numbers
+2. [`Matrix`](./math/fibonacci/fibonacci.go#L17):  Matrix This function calculates the n-th fibonacci number using the matrix method. [See](https://en.wikipedia.org/wiki/Fibonacci_number#Matrix_form)
+3. [`Recursive`](./math/fibonacci/fibonacci.go#L53):  Recursive calculates the n-th fibonacci number recursively by adding the previous two Fibonacci numbers. This algorithm is extremely slow for bigger numbers, but provides a simpler implementation.
 
 ---
 </details><details>
@@ -364,11 +451,11 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ##### Functions:
 
-1. [`Extended`](./math/gcd/extended.go#L12):  Extended simple extended gcd
+1. [`Extended`](./math/gcd/extended.go#L14):  Extended simple extended gcd
 2. [`ExtendedIterative`](./math/gcd/extendedgcditerative.go#L4):  ExtendedIterative finds and returns gcd(a, b), x, y satisfying a*x + b*y = gcd(a, b).
-3. [`ExtendedRecursive`](./math/gcd/extendedgcd.go#L4):  ExtendedRecursive finds and returns gcd(a, b), x, y satisfying a*x + b*y = gcd(a, b).
-4. [`Iterative`](./math/gcd/gcditerative.go#L4):  Iterative Faster iterative version of GcdRecursive without holding up too much of the stack
-5. [`Recursive`](./math/gcd/gcd.go#L4):  Recursive finds and returns the greatest common divisor of a given integer.
+3. [`ExtendedRecursive`](./math/gcd/extendedgcd.go#L9):  ExtendedRecursive finds and returns gcd(a, b), x, y satisfying a*x + b*y = gcd(a, b).
+4. [`Iterative`](./math/gcd/gcditerative.go#L7):  Iterative Faster iterative version of GcdRecursive without holding up too much of the stack
+5. [`Recursive`](./math/gcd/gcd.go#L7):  Recursive finds and returns the greatest common divisor of a given integer.
 6. [`TemplateBenchmarkExtendedGCD`](./math/gcd/extendedgcd_test.go#L44): No description provided.
 7. [`TemplateBenchmarkGCD`](./math/gcd/gcd_test.go#L37): No description provided.
 8. [`TemplateTestExtendedGCD`](./math/gcd/extendedgcd_test.go#L7): No description provided.
@@ -419,7 +506,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 ##### Functions:
 
 1. [`Distance`](./math/geometry/straightlines.go#L18):  Distance calculates the shortest distance between two points.
-2. [`EuclideanDistance`](./math/geometry/distance.go#L20):  EuclideanDistance returns the Euclidean distance between points in any `n` dimensional Euclidean space.
+2. [`EuclideanDistance`](./math/geometry/distance.go#L22):  EuclideanDistance returns the Euclidean distance between points in any `n` dimensional Euclidean space.
 3. [`IsParallel`](./math/geometry/straightlines.go#L42):  IsParallel checks if two lines are parallel or not.
 4. [`IsPerpendicular`](./math/geometry/straightlines.go#L47):  IsPerpendicular checks if two lines are perpendicular or not.
 5. [`PointDistance`](./math/geometry/straightlines.go#L53):  PointDistance calculates the distance of a given Point from a given line. The slice should contain the coefficiet of x, the coefficient of y and the constant in the respective order.
@@ -430,7 +517,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 ---
 ##### Types
 
-1. [`EuclideanPoint`](./math/geometry/distance.go#L14): No description provided.
+1. [`EuclideanPoint`](./math/geometry/distance.go#L16): No description provided.
 
 2. [`Line`](./math/geometry/straightlines.go#L13): No description provided.
 
@@ -443,26 +530,27 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
-#####  Package graph demonstrates Graph search algorithms reference: https://en.wikipedia.org/wiki/Tree_traversal
+#####  Package graph demonstrates Graph search algorithms reference: https://en.wikipedia.org/wiki/Tree_traversal Package graph provides algorithms to analyze graph structures.
 
 ---
 ##### Functions:
 
-1. [`ArticulationPoint`](./graph/articulationpoints.go#L19):  ArticulationPoint is a function to identify articulation points in a graph. The function takes the graph as an argument and returns a boolean slice which indicates whether a vertex is an articulation point or not. Worst Case Time Complexity: O(|V| + |E|) Auxiliary Space: O(|V|) reference: https://en.wikipedia.org/wiki/Biconnected_component and https://cptalks.quora.com/Cut-Vertex-Articulation-point
-2. [`BreadthFirstSearch`](./graph/breadthfirstsearch.go#L9):  BreadthFirstSearch is an algorithm for traversing and searching graph data structures. It starts at an arbitrary node of a graph, and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level. Worst-case performance	 		O(|V|+|E|)=O(b^{d})}O(|V|+|E|)=O(b^{d}) Worst-case space complexity	 	O(|V|)=O(b^{d})}O(|V|)=O(b^{d}) reference: https://en.wikipedia.org/wiki/Breadth-first_search
-3. [`DepthFirstSearch`](./graph/depthfirstsearch.go#L53): No description provided.
-4. [`DepthFirstSearchHelper`](./graph/depthfirstsearch.go#L21): No description provided.
-5. [`FloydWarshall`](./graph/floydwarshall.go#L15):  FloydWarshall Returns all pair's shortest path using Floyd Warshall algorithm
-6. [`GetIdx`](./graph/depthfirstsearch.go#L3): No description provided.
-7. [`KruskalMST`](./graph/kruskal.go#L23): No description provided.
-8. [`PrimMST`](./graph/prim.go#30): Computes the minimum spanning tree of a weighted undirected graph
-9. [`LowestCommonAncestor`](./graph/lowestcommonancestor.go#L111):  For each node, we will precompute its ancestor above him, its ancestor two nodes above, its ancestor four nodes above, etc. Let's call `jump[j][u]` is the `2^j`-th ancestor above the node `u` with `u` in range `[0, numbersVertex)`, `j` in range `[0,MAXLOG)`. These information allow us to jump from any node to any ancestor above it in `O(MAXLOG)` time.
-10. [`New`](./graph/graph.go#L16):  Constructor functions for graphs (undirected by default)
-11. [`NewTree`](./graph/lowestcommonancestor.go#L84): No description provided.
-12. [`NewUnionFind`](./graph/unionfind.go#L24):  Initialise a new union find data structure with s nodes
-13. [`NotExist`](./graph/depthfirstsearch.go#L12): No description provided.
-14. [`Topological`](./graph/topological.go#L7):  Topological assumes that graph given is valid and that its possible to get a topological ordering. constraints are array of []int{a, b}, representing an edge going from a to b
-15. [`Edmond-Karp`](./graph/edmondkarp.go#L43): Computes the maximum possible flow between a pair of s-t vertices in a weighted graph
+1. [`ArticulationPoint`](./graph/articulationpoints.go#L20):  ArticulationPoint identifies articulation points in a graph. It returns a boolean slice where each element indicates whether a vertex is an articulation point. Worst Case Time Complexity: O(|V| + |E|) Auxiliary Space: O(|V|) Reference: https://en.wikipedia.org/wiki/Biconnected_component and https://cptalks.quora.com/Cut-Vertex-Articulation-point
+2. [`BreadthFirstSearch`](./graph/breadthfirstsearch.go#L9):  BreadthFirstSearch is an algorithm for traversing and searching graph data structures. It starts at an arbitrary node of a graph, and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level. Worst-case performance	 		O(|V|+|E|)=O(b^{d})}O(|V|+|E|)=O(b^{d}) where |V| is the number of vertices and |E| is the number of edges in the graph and b is the branching factor of the graph (the average number of successors of a node). d is the depth of the goal node. Worst-case space complexity	 	O(|V|)=O(b^{d})}O(|V|)=O(b^{d}) where |V| is the number of vertices and |E| is the number of edges in the graph and b is the branching factor of the graph (the average number of successors of a node). d is the depth of the goal node. reference: https://en.wikipedia.org/wiki/Breadth-first_search
+3. [`DepthFirstSearch`](./graph/depthfirstsearch.go#L59): No description provided.
+4. [`DepthFirstSearchHelper`](./graph/depthfirstsearch.go#L27): No description provided.
+5. [`EdmondKarp`](./graph/edmondkarp.go#L43): No description provided.
+6. [`FindPath`](./graph/edmondkarp.go#L16):  Returns a mapping of vertices as path, if there is any from source to sink Otherwise, returns nil
+7. [`FloydWarshall`](./graph/floydwarshall.go#L17):  FloydWarshall Returns all pair's shortest path using Floyd Warshall algorithm
+8. [`GetIdx`](./graph/depthfirstsearch.go#L9): No description provided.
+9. [`Kahn`](./graph/kahn.go#L15):  Kahn's algorithm computes a topological ordering of a directed acyclic graph (DAG). `n` is the number of vertices, `dependencies` is a list of directed edges, where each pair [a, b] represents a directed edge from a to b (i.e. b depends on a). Vertices are assumed to be labelled 0, 1, ..., n-1. If the graph is not a DAG, the function returns nil.
+10. [`KruskalMST`](./graph/kruskal.go#L23): No description provided.
+11. [`LowestCommonAncestor`](./graph/lowestcommonancestor.go#L113):  For each node, we will precompute its ancestor above him, its ancestor two nodes above, its ancestor four nodes above, etc. Let's call `jump[j][u]` is the `2^j`-th ancestor above the node `u` with `u` in range `[0, numbersVertex)`, `j` in range `[0,MAXLOG)`. These information allow us to jump from any node to any ancestor above it in `O(MAXLOG)` time.
+12. [`New`](./graph/graph.go#L16):  Constructor functions for graphs (undirected by default)
+13. [`NewTree`](./graph/lowestcommonancestor.go#L86): No description provided.
+14. [`NewUnionFind`](./graph/unionfind.go#L25):  Initialise a new union find data structure with s nodes
+15. [`NotExist`](./graph/depthfirstsearch.go#L18): No description provided.
+16. [`Topological`](./graph/topological.go#L14):  Topological assumes that graph given is valid and that its possible to get a topological ordering. constraints are array of []int{a, b}, representing an edge going from a to b
 
 ---
 ##### Types
@@ -471,18 +559,22 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 2. [`Graph`](./graph/graph.go#L9): No description provided.
 
-3. [`Item`](./graph/dijkstra.go#L5): No description provided.
+3. [`Item`](./graph/dijkstra.go#L12): No description provided.
 
 4. [`Query`](./graph/lowestcommonancestor_test.go#L9): No description provided.
 
-5. [`Tree`](./graph/lowestcommonancestor.go#L25): No description provided.
+5. [`Tree`](./graph/lowestcommonancestor.go#L27): No description provided.
 
-6. [`TreeEdge`](./graph/lowestcommonancestor.go#L12): No description provided.
+6. [`TreeEdge`](./graph/lowestcommonancestor.go#L14): No description provided.
 
-7. [`UnionFind`](./graph/unionfind.go#L18): No description provided.
+7. [`UnionFind`](./graph/unionfind.go#L19): No description provided.
 
-8. [`WeightedGraph`](./graph/floydwarshall.go#L9): No description provided.
+8. [`WeightedGraph`](./graph/floydwarshall.go#L11): No description provided.
 
+9. [`minEdge`](#L0): 
+
+	Methods:
+	1. [`Len`](./graph/prim.go#L14): No description provided.
 
 ---
 </details><details>
@@ -499,14 +591,24 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 </details><details>
+	<summary> <strong> hamming </strong> </summary>	
+
+---
+
+##### Functions:
+
+1. [`Distance`](./strings/hamming/hammingdistance.go#L18): No description provided.
+
+---
+</details><details>
 	<summary> <strong> hashmap </strong> </summary>	
 
 ---
 
 ##### Functions:
 
-1. [`Make`](./structure/hashmap/hashmap.go#L32):  Make creates a new HashMap instance with input size and capacity
-2. [`New`](./structure/hashmap/hashmap.go#L24):  New return new HashMap instance
+1. [`DefaultNew`](./structure/hashmap/hashmap.go#L24):  DefaultNew returns a new HashMap instance with default values
+2. [`New`](./structure/hashmap/hashmap.go#L32):  New creates a new HashMap instance with the specified size and capacity
 
 ---
 ##### Types
@@ -641,33 +743,33 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
-#####  Package math is a package that contains mathematical algorithms and its different implementations. filename : krishnamurthy.go description: A program which contains the function that returns true if a given number is Krishnamurthy number or not. details: A number is a Krishnamurthy number if the sum of all the factorials of the digits is equal to the number. Ex: 1! = 1, 145 = 1! + 4! + 5! author(s): [GooMonk](https://github.com/GooMonk) see krishnamurthy_test.go
+#####  Package math is a package that contains mathematical algorithms and its different implementations. filename : krishnamurthy.go description: A program which contains the function that returns true if a given number is Krishnamurthy number or not. details: A number is a Krishnamurthy number if the sum of all the factorials of the digits is equal to the number. Ex: 1! = 1, 145 = 1! + 4! + 5! time complexity: O(log n) space complexity: O(1) author(s): [GooMonk](https://github.com/GooMonk) see krishnamurthy_test.go
 
 ---
 ##### Functions:
 
 1. [`Abs`](./math/abs.go#L11):  Abs returns absolute value
-2. [`AliquotSum`](./math/aliquotsum.go#L14):  This function returns s(n) for given number
-3. [`Combinations`](./math/binomialcoefficient.go#L20):  C is Binomial Coefficient function This function returns C(n, k) for given n and k
+2. [`AliquotSum`](./math/aliquotsum.go#L16):  This function returns s(n) for given number
+3. [`Combinations`](./math/binomialcoefficient.go#L22):  C is Binomial Coefficient function This function returns C(n, k) for given n and k
 4. [`Cos`](./math/cos.go#L10):  Cos  returns the cosine of the radian argument x. [See more](https://en.wikipedia.org/wiki/Sine_and_cosine) [Based on the idea of Bhaskara approximation of cos(x)](https://math.stackexchange.com/questions/3886552/bhaskara-approximation-of-cosx)
-5. [`DefaultPolynomial`](./math/pollard.go#L16):  DefaultPolynomial is the commonly used polynomial g(x) = (x^2 + 1) mod n
+5. [`DefaultPolynomial`](./math/pollard.go#L18):  DefaultPolynomial is the commonly used polynomial g(x) = (x^2 + 1) mod n
 6. [`FindKthMax`](./math/kthnumber.go#L11):  FindKthMax returns the kth large element given an integer slice with nil `error` if found and returns -1 with `error` `search.ErrNotFound` if not found. NOTE: The `nums` slice gets mutated in the process.
 7. [`FindKthMin`](./math/kthnumber.go#L19):  FindKthMin returns kth small element given an integer slice with nil `error` if found and returns -1 with `error` `search.ErrNotFound` if not found. NOTE: The `nums` slice gets mutated in the process.
 8. [`IsAutomorphic`](./math/isautomorphic.go#L16): No description provided.
-9. [`IsKrishnamurthyNumber`](./math/krishnamurthy.go#L12):  IsKrishnamurthyNumber returns if the provided number n is a Krishnamurthy number or not.
-10. [`IsPerfectNumber`](./math/perfectnumber.go#L34):  Checks if inNumber is a perfect number
+9. [`IsKrishnamurthyNumber`](./math/krishnamurthy.go#L14):  IsKrishnamurthyNumber returns if the provided number n is a Krishnamurthy number or not.
+10. [`IsPerfectNumber`](./math/perfectnumber.go#L36):  Checks if inNumber is a perfect number
 11. [`IsPowOfTwoUseLog`](./math/checkisnumberpoweroftwo.go#L10):  IsPowOfTwoUseLog This function checks if a number is a power of two using the logarithm. The limiting degree can be from 0 to 63. See alternatives in the binary package.
 12. [`Lerp`](./math/lerp.go#L5):  Lerp or Linear interpolation This function will return new value in 't' percentage  between 'v0' and 'v1'
-13. [`LiouvilleLambda`](./math/liouville.go#L24):  Lambda is the liouville function This function returns λ(n) for given number
+13. [`LiouvilleLambda`](./math/liouville.go#L26):  Lambda is the liouville function This function returns λ(n) for given number
 14. [`Mean`](./math/mean.go#L7): No description provided.
-15. [`Median`](./math/median.go#L12): No description provided.
-16. [`Mode`](./math/mode.go#L19): No description provided.
-17. [`Mu`](./math/mobius.go#L21):  Mu is the Mobius function This function returns μ(n) for given number
+15. [`Median`](./math/median.go#L14): No description provided.
+16. [`Mode`](./math/mode.go#L21): No description provided.
+17. [`Mu`](./math/mobius.go#L23):  Mu is the Mobius function This function returns μ(n) for given number
 18. [`Phi`](./math/eulertotient.go#L5):  Phi is the Euler totient function. This function computes the number of numbers less then n that are coprime with n.
-19. [`PollardsRhoFactorization`](./math/pollard.go#L29):  PollardsRhoFactorization is an implementation of Pollard's rho factorization algorithm using the default parameters x = y = 2
-20. [`PronicNumber`](./math/pronicnumber.go#L15):  PronicNumber returns true if argument passed to the function is pronic and false otherwise.
+19. [`PollardsRhoFactorization`](./math/pollard.go#L31):  PollardsRhoFactorization is an implementation of Pollard's rho factorization algorithm using the default parameters x = y = 2
+20. [`PronicNumber`](./math/pronicnumber.go#L17):  PronicNumber returns true if argument passed to the function is pronic and false otherwise.
 21. [`Sin`](./math/sin.go#L9):  Sin returns the sine of the radian argument x. [See more](https://en.wikipedia.org/wiki/Sine_and_cosine)
-22. [`SumOfProperDivisors`](./math/perfectnumber.go#L17):  Returns the sum of proper divisors of inNumber.
+22. [`SumOfProperDivisors`](./math/perfectnumber.go#L19):  Returns the sum of proper divisors of inNumber.
 
 ---
 </details><details>
@@ -675,7 +777,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
-#####  filename: strassenmatrixmultiply.go description: Implements matrix multiplication using the Strassen algorithm. details: This program takes two matrices as input and performs matrix multiplication using the Strassen algorithm, which is an optimized divide-and-conquer approach. It allows for efficient multiplication of large matrices. author(s): Mohit Raghav(https://github.com/mohit07raghav19) See strassenmatrixmultiply_test.go for test cases
+#####  filename: strassenmatrixmultiply.go description: Implements matrix multiplication using the Strassen algorithm. details: This program takes two matrices as input and performs matrix multiplication using the Strassen algorithm, which is an optimized divide-and-conquer approach. It allows for efficient multiplication of large matrices. time complexity: O(n^2.81) space complexity: O(n^2) author(s): Mohit Raghav(https://github.com/mohit07raghav19) See strassenmatrixmultiply_test.go for test cases
 
 ---
 ##### Functions:
@@ -708,7 +810,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ##### Functions:
 
-1. [`Bitwise`](./math/max/bitwisemax.go#L11):  Bitwise computes using bitwise operator the maximum of all the integer input and returns it
+1. [`Bitwise`](./math/max/bitwisemax.go#L13):  Bitwise computes using bitwise operator the maximum of all the integer input and returns it
 2. [`Int`](./math/max/max.go#L6):  Int is a function which returns the maximum of all the integers provided as arguments.
 
 ---
@@ -723,6 +825,16 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 ##### Functions:
 
 1. [`MaxSubarraySum`](./other/maxsubarraysum/maxsubarraysum.go#L13):  MaxSubarraySum returns the maximum subarray sum
+
+---
+</details><details>
+	<summary> <strong> md5 </strong> </summary>	
+
+---
+
+##### Functions:
+
+1. [`Hash`](./hashing/md5/md5.go#L63):  Hash computes the MD5 hash of the input message
 
 ---
 </details><details>
@@ -743,9 +855,9 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ##### Functions:
 
-1. [`Exponentiation`](./math/modular/exponentiation.go#L22):  Exponentiation returns base^exponent % mod
-2. [`Inverse`](./math/modular/inverse.go#L19):  Inverse Modular function
-3. [`Multiply64BitInt`](./math/modular/exponentiation.go#L51):  Multiply64BitInt Checking if the integer multiplication overflows
+1. [`Exponentiation`](./math/modular/exponentiation.go#L24):  Exponentiation returns base^exponent % mod
+2. [`Inverse`](./math/modular/inverse.go#L21):  Inverse Modular function
+3. [`Multiply64BitInt`](./math/modular/exponentiation.go#L53):  Multiply64BitInt Checking if the integer multiplication overflows
 
 ---
 </details><details>
@@ -755,7 +867,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ##### Functions:
 
-1. [`MoserDeBruijnSequence`](./math/moserdebruijnsequence/sequence.go#L7): No description provided.
+1. [`MoserDeBruijnSequence`](./math/moserdebruijnsequence/sequence.go#L9): No description provided.
 
 ---
 </details><details>
@@ -768,7 +880,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 ---
 ##### Functions:
 
-1. [`IsBalanced`](./other/nested/nestedbrackets.go#L20):  IsBalanced returns true if provided input string is properly nested. Input is a sequence of brackets: '(', ')', '[', ']', '{', '}'. A sequence of brackets `s` is considered properly nested if any of the following conditions are true:   - `s` is empty;   - `s` has the form (U) or [U] or {U} where U is a properly nested string;   - `s` has the form VW where V and W are properly nested strings. For example, the string "()()[()]" is properly nested but "[(()]" is not. **Note** Providing characters other then brackets would return false, despite brackets sequence in the string. Make sure to filter input before usage.
+1. [`IsBalanced`](./other/nested/nestedbrackets.go#L23): No description provided.
 
 ---
 </details><details>
@@ -809,7 +921,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ##### Functions:
 
-1. [`GenerateTriangle`](./math/pascal/pascaltriangle.go#L24):  GenerateTriangle This function generates a Pascal's triangle of n lines
+1. [`GenerateTriangle`](./math/pascal/pascaltriangle.go#L26):  GenerateTriangle This function generates a Pascal's triangle of n lines
 
 ---
 </details><details>
@@ -817,12 +929,9 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
-#####  Package password contains functions to help generate random passwords
-
----
 ##### Functions:
 
-1. [`Generate`](./other/password/generator.go#L15):  Generate returns a newly generated password
+1. [`Generate`](./other/password/generator.go#L18):  Generate returns a newly generated password
 
 ---
 </details><details>
@@ -832,9 +941,9 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ##### Functions:
 
-1. [`GenerateElementSet`](./math/permutation/heaps.go#L37): No description provided.
-2. [`Heaps`](./math/permutation/heaps.go#L8):  Heap's Algorithm for generating all permutations of n objects
-3. [`NextPermutation`](./math/permutation/next_permutation.go#8): A solution to find next permutation of an integer array in constant memory
+1. [`GenerateElementSet`](./math/permutation/heaps.go#L42): No description provided.
+2. [`Heaps`](./math/permutation/heaps.go#L13):  Heap's Algorithm for generating all permutations of n objects
+3. [`NextPermutation`](./math/permutation/next_permutation.go#L10): No description provided.
 
 ---
 </details><details>
@@ -847,9 +956,9 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 ---
 ##### Functions:
 
-1. [`MonteCarloPi`](./math/pi/montecarlopi.go#L17): No description provided.
-2. [`MonteCarloPiConcurrent`](./math/pi/montecarlopi.go#L36):  MonteCarloPiConcurrent approximates the value of pi using the Monte Carlo method. Unlike the MonteCarloPi function (first version), this implementation uses goroutines and channels to parallelize the computation. More details on the Monte Carlo method available at https://en.wikipedia.org/wiki/Monte_Carlo_method. More details on goroutines parallelization available at https://go.dev/doc/effective_go#parallel.
-3. [`Spigot`](./math/pi/spigotpi.go#L12): No description provided.
+1. [`MonteCarloPi`](./math/pi/montecarlopi.go#L19): No description provided.
+2. [`MonteCarloPiConcurrent`](./math/pi/montecarlopi.go#L38):  MonteCarloPiConcurrent approximates the value of pi using the Monte Carlo method. Unlike the MonteCarloPi function (first version), this implementation uses goroutines and channels to parallelize the computation. More details on the Monte Carlo method available at https://en.wikipedia.org/wiki/Monte_Carlo_method. More details on goroutines parallelization available at https://go.dev/doc/effective_go#parallel.
+3. [`Spigot`](./math/pi/spigotpi.go#L14): No description provided.
 
 ---
 </details><details>
@@ -857,18 +966,18 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
-#####  Package polybius is encrypting method with polybius square ref: https://en.wikipedia.org/wiki/Polybius_square#Hybrid_Polybius_Playfair_Cipher
+#####  Package polybius is encrypting method with polybius square description: Polybius square details : The Polybius algorithm is a simple algorithm that is used to encode a message by converting each letter to a pair of numbers. time complexity: O(n) space complexity: O(n) ref: https://en.wikipedia.org/wiki/Polybius_square#Hybrid_Polybius_Playfair_Cipher
 
 ---
 ##### Functions:
 
 1. [`FuzzPolybius`](./cipher/polybius/polybius_test.go#L154): No description provided.
-2. [`NewPolybius`](./cipher/polybius/polybius.go#L21):  NewPolybius returns a pointer to object of Polybius. If the size of "chars" is longer than "size", "chars" are truncated to "size".
+2. [`NewPolybius`](./cipher/polybius/polybius.go#L25):  NewPolybius returns a pointer to object of Polybius. If the size of "chars" is longer than "size", "chars" are truncated to "size".
 
 ---
 ##### Types
 
-1. [`Polybius`](./cipher/polybius/polybius.go#L12): No description provided.
+1. [`Polybius`](./cipher/polybius/polybius.go#L16): No description provided.
 
 
 ---
@@ -882,7 +991,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 1. [`IterativePower`](./math/power/fastexponent.go#L4):  IterativePower is iterative O(logn) function for pow(x, y)
 2. [`RecursivePower`](./math/power/fastexponent.go#L18):  RecursivePower is recursive O(logn) function for pow(x, y)
 3. [`RecursivePower1`](./math/power/fastexponent.go#L30):  RecursivePower1 is recursive O(n) function for pow(x, y)
-4. [`UsingLog`](./math/power/powvialogarithm.go#L14): No description provided.
+4. [`UsingLog`](./math/power/powvialogarithm.go#L16): No description provided.
 
 ---
 </details><details>
@@ -890,20 +999,543 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
+#####  sieve2.go - Sieve of Eratosthenes
+ * Algorithm to generate prime numbers up to a limit
+ * time complexity: O(n log log n)
+ * space complexity: O(n)
+ * Author: ddaniel27
+ 
+
+---
 ##### Functions:
 
-1. [`Factorize`](./math/prime/primefactorization.go#L5):  Factorize is a function that computes the exponents of each prime in the prime factorization of n
+1. [`Factorize`](./math/prime/primefactorization.go#L10):  Factorize is a function that computes the exponents of each prime in the prime factorization of n
 2. [`Generate`](./math/prime/sieve.go#L26):  Generate returns a int slice of prime numbers up to the limit
 3. [`GenerateChannel`](./math/prime/sieve.go#L9):  Generate generates the sequence of integers starting at 2 and sends it to the channel `ch`
-4. [`MillerRabinDeterministic`](./math/prime/millerrabintest.go#L121):  MillerRabinDeterministic is a Deterministic version of the Miller-Rabin test, which returns correct results for all valid int64 numbers.
-5. [`MillerRabinProbabilistic`](./math/prime/millerrabintest.go#L101):  MillerRabinProbabilistic is a probabilistic test for primality of an integer based of the algorithm devised by Miller and Rabin.
-6. [`MillerRandomTest`](./math/prime/millerrabintest.go#L77):  MillerRandomTest This is the intermediate step that repeats within the miller rabin primality test for better probabilitic chances of receiving the correct result with random witnesses.
-7. [`MillerTest`](./math/prime/millerrabintest.go#L49):  MillerTest tests whether num is a strong probable prime to a witness. Formally: a^d ≡ 1 (mod n) or a^(2^r * d) ≡ -1 (mod n), 0 <= r <= s
-8. [`MillerTestMultiple`](./math/prime/millerrabintest.go#L84):  MillerTestMultiple is like MillerTest but runs the test for multiple witnesses.
-9. [`OptimizedTrialDivision`](./math/prime/primecheck.go#L26):  OptimizedTrialDivision checks primality of an integer using an optimized trial division method. The optimizations include not checking divisibility by the even numbers and only checking up to the square root of the given number.
+4. [`MillerRabinDeterministic`](./math/prime/millerrabintest.go#L122):  MillerRabinDeterministic is a Deterministic version of the Miller-Rabin test, which returns correct results for all valid int64 numbers.
+5. [`MillerRabinProbabilistic`](./math/prime/millerrabintest.go#L102):  MillerRabinProbabilistic is a probabilistic test for primality of an integer based of the algorithm devised by Miller and Rabin.
+6. [`MillerRandomTest`](./math/prime/millerrabintest.go#L78):  MillerRandomTest This is the intermediate step that repeats within the miller rabin primality test for better probabilitic chances of receiving the correct result with random witnesses.
+7. [`MillerTest`](./math/prime/millerrabintest.go#L50):  MillerTest tests whether num is a strong probable prime to a witness. Formally: a^d ≡ 1 (mod n) or a^(2^r * d) ≡ -1 (mod n), 0 <= r <= s
+8. [`MillerTestMultiple`](./math/prime/millerrabintest.go#L85):  MillerTestMultiple is like MillerTest but runs the test for multiple witnesses.
+9. [`OptimizedTrialDivision`](./math/prime/primecheck.go#L28):  OptimizedTrialDivision checks primality of an integer using an optimized trial division method. The optimizations include not checking divisibility by the even numbers and only checking up to the square root of the given number.
 10. [`Sieve`](./math/prime/sieve.go#L16):  Sieve Sieving the numbers that are not prime from the channel - basically removing them from the channels
-11. [`TrialDivision`](./math/prime/primecheck.go#L9):  TrialDivision tests whether a number is prime by trying to divide it by the numbers less than it.
-12. [`Twin`](./math/prime/twin.go#L15):  This function returns twin prime for given number returns (n + 2) if both n and (n + 2) are prime -1 otherwise
+11. [`SieveEratosthenes`](./math/prime/sieve2.go#L9): No description provided.
+12. [`TrialDivision`](./math/prime/primecheck.go#L11):  TrialDivision tests whether a number is prime by trying to divide it by the numbers less than it.
+13. [`Twin`](./math/prime/twin.go#L17):  This function returns twin prime for given number returns (n + 2) if both n and (n + 2) are prime -1 otherwise
+
+---
+</details><details>
+	<summary> <strong> problem1 </strong> </summary>	
+
+---
+
+##### /**
+ * Problem 1 - Multiples of 3 and 5
+ *
+ * @see {@link https://projecteuler.net/problem=1}
+ *
+ * If we list all the natural numbers below 10 that are multiples of 3 or 5,
+ * we get 3, 5, 6 and 9. The sum of these multiples is 23.
+ * Find the sum of all the multiples of 3 or 5 below 1000.
+ *
+ * @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem1`](./project_euler/problem_1/problem1.go#L14): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem10 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 10 - Summation of primes
+* @see {@link https://projecteuler.net/problem=10}
+*
+* The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+* Find the sum of all the primes below two million.
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem10`](./project_euler/problem_10/problem10.go#L14): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem11 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 11 - Largest product in a grid
+* @see {@link https://projecteuler.net/problem=11}
+*
+* In the 20×20 grid below, four numbers along a diagonal line have been marked in red.
+*
+* The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
+*
+* What is the greatest product of four adjacent numbers in the same direction
+* (up, down, left, right, or diagonally) in the 20×20 grid?
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem11`](./project_euler/problem_11/problem11.go#L39): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem12 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 12 - Highly divisible triangular number
+* @see {@link https://projecteuler.net/problem=12}
+*
+* The sequence of triangle numbers is generated by adding the natural numbers.
+* So the 7th triangle number would be 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28.
+* The first ten terms would be:
+*
+* 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...
+*
+* Let us list the factors of the first seven triangle numbers:
+*
+*  1: 1
+*  3: 1,3
+*  6: 1,2,3,6
+* 10: 1,2,5,10
+* 15: 1,3,5,15
+* 21: 1,3,7,21
+* 28: 1,2,4,7,14,28
+*
+* We can see that 28 is the first triangle number to have over five divisors.
+* What is the value of the first triangle number to have over five hundred divisors?
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem12`](./project_euler/problem_12/problem12.go#L28): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem13 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 13 - Large sum
+* @see {@link https://projecteuler.net/problem=13}
+*
+* Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem13`](./project_euler/problem_13/problem13.go#L114): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem14 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 14 - Longest Collatz sequence
+* @see {@link https://projecteuler.net/problem=14}
+*
+* The following iterative sequence is defined for the set of positive integers:
+* n → n/2 (n is even)
+* n → 3n + 1 (n is odd)
+*
+* Using the rule above and starting with 13, we generate the following sequence:
+* 13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1
+*
+* Which starting number, under one million, produces the longest chain?
+*
+* NOTE: Once the chain starts the terms are allowed to go above one million.
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem14`](./project_euler/problem_14/problem14.go#L26): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem15 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 15 - Lattice paths
+* @see {@link https://projecteuler.net/problem=15}
+*
+* Starting in the top left corner of a 2×2 grid,
+* and only being able to move to the right and down,
+* there are exactly 6 routes to the bottom right corner.
+*
+* How many such routes are there through a 20×20 grid?
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem15`](./project_euler/problem_15/problem15.go#L19): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem16 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 16 - Power digit sum
+* @see {@link https://projecteuler.net/problem=16}
+*
+* 2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
+*
+* What is the sum of the digits of the number 2^1000?
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem16`](./project_euler/problem_16/problem16.go#L17): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem17 </strong> </summary>	
+
+---
+
+##### /**
+* I put this code in a separate file because it is too long.
+* Also it took me a lot of time to parsing this input from
+* a random html page, so, I don't want to lose it.
+ /**
+* Problem 17 - Number letter counts
+* @see {@link https://projecteuler.net/problem=17}
+*
+* If the numbers 1 to 5 are written out in words: one, two, three, four, five,
+* then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.
+*
+* If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words,
+* how many letters would be used?
+*
+* NOTE: Do not count spaces or hyphens. For example, 342 (three hundred and forty-two)
+* contains 23 letters and 115 (one hundred and fifteen) contains 20 letters.
+* The use of "and" when writing out numbers is in compliance with British usage.
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem17`](./project_euler/problem_17/problem17.go#L21): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem18 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 18 - Maximum path sum I
+* @see {@link https://projecteuler.net/problem=18}
+*
+* By starting at the top of the triangle below and
+* moving to adjacent numbers on the row below,
+* the maximum total from top to bottom is 23.
+*
+* 3
+* 7 4
+* 2 4 6
+* 8 5 9 3
+*
+* That is, 3 + 7 + 4 + 9 = 23.
+*
+* Find the maximum total from top to bottom of the triangle below:
+* [refer to the problem link]
+*
+* NOTE: As there are only 16384 routes, it is possible
+* to solve this problem by trying every route.
+* However, Problem 67, is the same challenge with a triangle
+* containing one-hundred rows; it cannot be solved by brute force,
+* and requires a clever method! ;o)
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem18`](./project_euler/problem_18/problem18.go#L50): No description provided.
+
+---
+##### Types
+
+1. [`DFSNode`](./project_euler/problem_18/tree.go#L56): No description provided.
+
+2. [`Edge`](./project_euler/problem_18/edge.go#L3): No description provided.
+
+3. [`Leaf`](./project_euler/problem_18/leaf.go#L3): No description provided.
+
+4. [`Root`](./project_euler/problem_18/root.go#L3): No description provided.
+
+5. [`Tree`](./project_euler/problem_18/tree.go#L8): No description provided.
+
+
+---
+</details><details>
+	<summary> <strong> problem19 </strong> </summary>	
+
+---
+
+##### Functions:
+
+1. [`IsLeapYear`](./project_euler/problem_19/problem19.go#L55): No description provided.
+2. [`Problem19`](./project_euler/problem_19/problem19.go#L26): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem2 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 2 - Even Fibonacci numbers
+* @see {@link https://projecteuler.net/problem=2}
+*
+* Each new term in the Fibonacci sequence is generated by adding the previous two terms.
+* By starting with 1 and 2, the first 10 terms will be:
+*
+* 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
+*
+* By considering the terms in the Fibonacci sequence whose values do not exceed four million,
+* find the sum of the even-valued terms.
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem2`](./project_euler/problem_2/problem2.go#L17): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem20 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 20 - Factorial digit sum
+* @see {@link https://projecteuler.net/problem=20}
+*
+* n! means n × (n − 1) × ... × 3 × 2 × 1
+*
+* For example, 10! = 10 × 9 × ... × 3 × 2 × 1 = 3628800,
+* and the sum of the digits in the number 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.
+*
+* Find the sum of the digits in the number 100!
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem20`](./project_euler/problem_20/problem20.go#L18): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem3 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 3 - Largest prime factor
+* @see {@link https://projecteuler.net/problem=3}
+*
+* The prime factors of 13195 are 5, 7, 13 and 29.
+* What is the largest prime factor of the number 600851475143 ?
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem3`](./project_euler/problem_3/problem3.go#L12): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem4 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 4 - Largest palindrome product
+* @see {@link https://projecteuler.net/problem=4}
+*
+* A palindromic number reads the same both ways.
+* The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+* Find the largest palindrome made from the product of two 3-digit numbers.
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem4`](./project_euler/problem_4/problem4.go#L19): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem5 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 5 - Smallest multiple
+* @see {@link https://projecteuler.net/problem=5}
+*
+* 2520 is the smallest number that can be divided by
+* each of the numbers from 1 to 10 without any remainder.
+* What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem5`](./project_euler/problem_5/problem5.go#L13): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem6 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 6 - Sum square difference
+* @see {@link https://projecteuler.net/problem=6}
+*
+* The sum of the squares of the first ten natural numbers is,
+* 1^2 + 2^2 + ... + 10^2 = 385
+*
+* The square of the sum of the first ten natural numbers is,
+* (1 + 2 + ... + 10)^2 = 55^2 = 3025
+*
+* Hence the difference between the sum of the squares of the first ten natural numbers
+* and the square of the sum is 3025 − 385 = 2640.
+*
+* Find the difference between the sum of the squares of the first one hundred natural numbers
+* and the square of the sum.
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem6`](./project_euler/problem_6/problem6.go#L21): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem7 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 7 - 10001st prime
+* @see {@link https://projecteuler.net/problem=7}
+*
+* By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13,
+* we can see that the 6th prime is 13.
+*
+* What is the 10 001st prime number?
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem7`](./project_euler/problem_7/problem7.go#L16): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem8 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 8 - Largest product in a series
+* @see {@link https://projecteuler.net/problem=8}
+*
+* The four adjacent digits in the 1000-digit number that
+* have the greatest product are 9 × 9 × 8 × 9 = 5832.
+* Find the thirteen adjacent digits in the 1000-digit number
+* that have the greatest product. What is the value of this product?
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem8`](./project_euler/problem_8/problem8.go#L16): No description provided.
+
+---
+</details><details>
+	<summary> <strong> problem9 </strong> </summary>	
+
+---
+
+##### /**
+* Problem 9 - Special Pythagorean triplet
+* @see {@link https://projecteuler.net/problem=9}
+*
+* A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
+* a^2 + b^2 = c^2
+*
+* For example, 3^2 + 4^2 = 9 + 16 = 25 = 5^2.
+*
+* There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+* Find the product abc.
+*
+* @author ddaniel27
+ 
+
+---
+##### Functions:
+
+1. [`Problem9`](./project_euler/problem_9/problem9.go#L17): No description provided.
 
 ---
 </details><details>
@@ -948,11 +1580,25 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 </details><details>
+	<summary> <strong> railfence </strong> </summary>	
+
+---
+
+#####  railfence.go description: Rail Fence Cipher details: The rail fence cipher is a an encryption algorithm that uses a rail fence pattern to encode a message. it is a type of transposition cipher that rearranges the characters of the plaintext to form the ciphertext. time complexity: O(n) space complexity: O(n) ref: https://en.wikipedia.org/wiki/Rail_fence_cipher
+
+---
+##### Functions:
+
+1. [`Decrypt`](./cipher/railfence/railfence.go#L50): No description provided.
+2. [`Encrypt`](./cipher/railfence/railfence.go#L13): No description provided.
+
+---
+</details><details>
 	<summary> <strong> rot13 </strong> </summary>	
 
 ---
 
-#####  Package rot13 is a simple letter substitution cipher that replaces a letter with the 13th letter after it in the alphabet. ref: https://en.wikipedia.org/wiki/ROT13
+#####  Package rot13 is a simple letter substitution cipher that replaces a letter with the 13th letter after it in the alphabet. description: ROT13 details: ROT13 is a simple letter substitution cipher that replaces a letter with the 13th letter after it in the alphabet. it is a special case of the Caesar cipher time complexity: O(n) space complexity: O(n) ref: https://en.wikipedia.org/wiki/ROT13
 
 ---
 ##### Functions:
@@ -965,14 +1611,22 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
-#####  Package rsa shows a simple implementation of RSA algorithm
+#####  Package rsa shows a simple implementation of RSA algorithm/*
+rsa2.go
+description: RSA encryption and decryption including key generation
+details: [RSA wiki](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
+time complexity: O(n)
+space complexity: O(1)
+author(s): [ddaniel27](https://github.com/ddaniel27)
+ 
 
 ---
 ##### Functions:
 
-1. [`Decrypt`](./cipher/rsa/rsa.go#L43):  Decrypt decrypts encrypted rune slice based on the RSA algorithm
-2. [`Encrypt`](./cipher/rsa/rsa.go#L28):  Encrypt encrypts based on the RSA algorithm - uses modular exponentitation in math directory
+1. [`Decrypt`](./cipher/rsa/rsa.go#L45):  Decrypt decrypts encrypted rune slice based on the RSA algorithm
+2. [`Encrypt`](./cipher/rsa/rsa.go#L30):  Encrypt encrypts based on the RSA algorithm - uses modular exponentitation in math directory
 3. [`FuzzRsa`](./cipher/rsa/rsa_test.go#L79): No description provided.
+4. [`New`](./cipher/rsa/rsa2.go#L32):  New initializes the RSA algorithm returns the RSA object
 
 ---
 </details><details>
@@ -991,9 +1645,12 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
+#####  Segment Tree Data Structure for efficient range queries on an array of integers. It can query the sum and update the elements to a new value of any range of the array. Build: O(n*log(n)) Query: O(log(n)) Update: O(log(n)) reference: https://cp-algorithms.com/data_structures/segment_tree.html
+
+---
 ##### Functions:
 
-1. [`NewSegmentTree`](./structure/segmenttree/segmenttree.go#L116): No description provided.
+1. [`NewSegmentTree`](./structure/segmenttree/segmenttree.go#L117):  NewSegmentTree returns a new instance of a SegmentTree. It takes an input array of integers representing Array, initializes and builds the SegmentTree.
 
 ---
 ##### Types
@@ -1016,13 +1673,23 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 </details><details>
+	<summary> <strong> sha1 </strong> </summary>	
+
+---
+
+##### Functions:
+
+1. [`Hash`](./hashing/sha1/sha1.go#L43):  Hash computes the SHA-1 hash of the input message
+
+---
+</details><details>
 	<summary> <strong> sha256 </strong> </summary>	
 
 ---
 
 ##### Functions:
 
-1. [`Hash`](./hashing/sha256/sha256.go#L50):  Hash hashes the input message using the sha256 hashing function, and return a 32 byte array. The implementation follows the RGC6234 standard, which is documented at https://datatracker.ietf.org/doc/html/rfc6234
+1. [`Hash`](./hashing/sha256/sha256.go#L52):  Hash hashes the input message using the sha256 hashing function, and return a 32 byte array. The implementation follows the RGC6234 standard, which is documented at https://datatracker.ietf.org/doc/html/rfc6234
 
 ---
 </details><details>
@@ -1030,41 +1697,45 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
-#####  Package sort a package for demonstrating sorting algorithms in Go
+#####  Package sort a package for demonstrating sorting algorithms in Go Package sort implements various sorting algorithms.
 
 ---
 ##### Functions:
 
 1. [`BinaryInsertion`](./sort/binaryinsertionsort.go#L13): No description provided.
-2. [`Bogo`](./sort/bogosort.go#L32): No description provided.
+2. [`Bogo`](./sort/bogosort.go#L33): No description provided.
 3. [`Bubble`](./sort/bubblesort.go#L9):  Bubble is a simple generic definition of Bubble sort algorithm.
 4. [`Bucket`](./sort/bucketsort.go#L7):  Bucket sorts a slice. It is mainly useful when input is uniformly distributed over a range.
-5. [`Cocktail`](./sort/cocktailsort.go#L9):  Cocktail sort is a variation of bubble sort, operating in two directions (beginning to end, end to beginning)
-6. [`Comb`](./sort/combSort.go#L17):  Comb is a simple sorting algorithm which is an improvement of the bubble sorting algorithm.
-7. [`Count`](./sort/countingsort.go#L11): No description provided.
-8. [`Cycle`](./sort/cyclesort.go#L10):  Cycle sort is an in-place, unstable sorting algorithm that is particularly useful when sorting arrays containing elements with a small range of values. It is theoretically optimal in terms of the total number of writes to the original array.
-9. [`Exchange`](./sort/exchangesort.go#L8): No description provided.
-10. [`HeapSort`](./sort/heapsort.go#L116): No description provided.
-11. [`ImprovedSimple`](./sort/simplesort.go#L27):  ImprovedSimple is a improve SimpleSort by skipping an unnecessary comparison of the first and last. This improved version is more similar to implementation of insertion sort
-12. [`Insertion`](./sort/insertionsort.go#L5): No description provided.
-13. [`Merge`](./sort/mergesort.go#L41):  Merge Perform merge sort on a slice
-14. [`MergeIter`](./sort/mergesort.go#L55): No description provided.
-15. [`Pancake`](./sort/pancakesort.go#L8):  Pancake sorts a slice using flip operations, where flip refers to the idea of reversing the slice from index `0` to `i`.
-16. [`ParallelMerge`](./sort/mergesort.go#L66):  ParallelMerge Perform merge sort on a slice using goroutines
-17. [`Partition`](./sort/quicksort.go#L12): No description provided.
-18. [`Patience`](./sort/patiencesort.go#L13): No description provided.
-19. [`Pigeonhole`](./sort/pigeonholesort.go#L15):  Pigeonhole sorts a slice using pigeonhole sorting algorithm. NOTE: To maintain time complexity O(n + N), this is the reason for having only Integer constraint instead of Ordered.
-20. [`Quicksort`](./sort/quicksort.go#L39):  Quicksort Sorts the entire array
-21. [`QuicksortRange`](./sort/quicksort.go#L26):  QuicksortRange Sorts the specified range within the array
-22. [`RadixSort`](./sort/radixsort.go#L43): No description provided.
-23. [`Selection`](./sort/selectionsort.go#L5): No description provided.
-24. [`Shell`](./sort/shellsort.go#L5): No description provided.
-25. [`Simple`](./sort/simplesort.go#L13): No description provided.
+5. [`Circle`](./sort/circlesort.go#L7):  Circle sorts an array using the circle sort algorithm.
+6. [`Cocktail`](./sort/cocktailsort.go#L9):  Cocktail sort is a variation of bubble sort, operating in two directions (beginning to end, end to beginning)
+7. [`Comb`](./sort/combSort.go#L20):  Comb is a simple sorting algorithm which is an improvement of the bubble sorting algorithm.
+8. [`Count`](./sort/countingsort.go#L14): No description provided.
+9. [`Cycle`](./sort/cyclesort.go#L10):  Cycle sort is an in-place, unstable sorting algorithm that is particularly useful when sorting arrays containing elements with a small range of values. It is theoretically optimal in terms of the total number of writes to the original array.
+10. [`Exchange`](./sort/exchangesort.go#L11): No description provided.
+11. [`HeapSort`](./sort/heapsort.go#L122): No description provided.
+12. [`ImprovedSimple`](./sort/simplesort.go#L30):  ImprovedSimple is a improve SimpleSort by skipping an unnecessary comparison of the first and last. This improved version is more similar to implementation of insertion sort
+13. [`Insertion`](./sort/insertionsort.go#L11): No description provided.
+14. [`Merge`](./sort/mergesort.go#L47):  Merge Perform merge sort on a slice
+15. [`MergeIter`](./sort/mergesort.go#L61): No description provided.
+16. [`OddEvenSort`](./sort/oddevensort.go#L12):  OddEvenSort performs the odd-even sort algorithm on the given array. It is a variation of bubble sort that compares adjacent pairs, alternating between odd and even indexed elements in each pass until the array is sorted.
+17. [`Pancake`](./sort/pancakesort.go#L8):  Pancake sorts a slice using flip operations, where flip refers to the idea of reversing the slice from index `0` to `i`.
+18. [`ParallelMerge`](./sort/mergesort.go#L72):  ParallelMerge Perform merge sort on a slice using goroutines
+19. [`Partition`](./sort/quicksort.go#L15): No description provided.
+20. [`Patience`](./sort/patiencesort.go#L16): No description provided.
+21. [`Pigeonhole`](./sort/pigeonholesort.go#L17):  Pigeonhole sorts a slice using pigeonhole sorting algorithm. NOTE: To maintain time complexity O(n + N), this is the reason for having only Integer constraint instead of Ordered.
+22. [`Quicksort`](./sort/quicksort.go#L42):  Quicksort Sorts the entire array
+23. [`QuicksortRange`](./sort/quicksort.go#L29):  QuicksortRange Sorts the specified range within the array
+24. [`RadixSort`](./sort/radixsort.go#L46): No description provided.
+25. [`Selection`](./sort/selectionsort.go#L5): No description provided.
+26. [`Shell`](./sort/shellsort.go#L5): No description provided.
+27. [`Simple`](./sort/simplesort.go#L16): No description provided.
+28. [`Stooge`](./sort/stooge_sort.go#L28): No description provided.
+29. [`Timsort`](./sort/timsort.go#L13):  Timsort is a simple generic implementation of Timsort algorithm.
 
 ---
 ##### Types
 
-1. [`MaxHeap`](./sort/heapsort.go#L5): No description provided.
+1. [`MaxHeap`](./sort/heapsort.go#L11): No description provided.
 
 
 ---
@@ -1131,8 +1802,8 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ##### Functions:
 
-1. [`Decrypt`](./cipher/transposition/transposition.go#L81): No description provided.
-2. [`Encrypt`](./cipher/transposition/transposition.go#L51): No description provided.
+1. [`Decrypt`](./cipher/transposition/transposition.go#L83): No description provided.
+2. [`Encrypt`](./cipher/transposition/transposition.go#L53): No description provided.
 3. [`FuzzTransposition`](./cipher/transposition/transposition_test.go#L103): No description provided.
 
 ---
@@ -1147,8 +1818,10 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 ##### Functions:
 
 1. [`NewAVL`](./structure/tree/avl.go#L54):  NewAVL creates a novel AVL tree
-2. [`NewBinarySearch`](./structure/tree/bstree.go#L46):  NewBinarySearch creates a novel Binary-Search tree
-3. [`NewRB`](./structure/tree/rbtree.go#L57):  NewRB creates a new Red-Black Tree
+2. [`NewBTree`](./structure/tree/btree.go#L35): No description provided.
+3. [`NewBTreeNode`](./structure/tree/btree.go#L24): No description provided.
+4. [`NewBinarySearch`](./structure/tree/bstree.go#L46):  NewBinarySearch creates a novel Binary-Search tree
+5. [`NewRB`](./structure/tree/rbtree.go#L57):  NewRB creates a new Red-Black Tree
 
 ---
 ##### Types
@@ -1159,11 +1832,15 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 3. [`BSNode`](./structure/tree/bstree.go#L15): No description provided.
 
-4. [`BinarySearch`](./structure/tree/bstree.go#L40): No description provided.
+4. [`BTree`](./structure/tree/btree.go#L15): No description provided.
 
-5. [`RB`](./structure/tree/rbtree.go#L51): No description provided.
+5. [`BTreeNode`](./structure/tree/btree.go#L8): No description provided.
 
-6. [`RBNode`](./structure/tree/rbtree.go#L25): No description provided.
+6. [`BinarySearch`](./structure/tree/bstree.go#L40): No description provided.
+
+7. [`RB`](./structure/tree/rbtree.go#L51): No description provided.
+
+8. [`RBNode`](./structure/tree/rbtree.go#L25): No description provided.
 
 
 ---
@@ -1191,27 +1868,14 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
-#####  Package xor is an encryption algorithm that operates the exclusive disjunction(XOR) ref: https://en.wikipedia.org/wiki/XOR_cipher
+#####  Package xor is an encryption algorithm that operates the exclusive disjunction(XOR) description: XOR encryption details: The XOR encryption is an algorithm that operates the exclusive disjunction(XOR) on each character of the plaintext with a given key time complexity: O(n) space complexity: O(n) ref: https://en.wikipedia.org/wiki/XOR_cipher
 
 ---
 ##### Functions:
 
-1. [`Decrypt`](./cipher/xor/xor.go#L19):  Decrypt decrypts with Xor encryption
-2. [`Encrypt`](./cipher/xor/xor.go#L10):  Encrypt encrypts with Xor encryption after converting each character to byte The returned value might not be readable because there is no guarantee which is within the ASCII range If using other type such as string, []int, or some other types, add the statements for converting the type to []byte.
+1. [`Decrypt`](./cipher/xor/xor.go#L23):  Decrypt decrypts with Xor encryption
+2. [`Encrypt`](./cipher/xor/xor.go#L14):  Encrypt encrypts with Xor encryption after converting each character to byte The returned value might not be readable because there is no guarantee which is within the ASCII range If using other type such as string, []int, or some other types, add the statements for converting the type to []byte.
 3. [`FuzzXOR`](./cipher/xor/xor_test.go#L108): No description provided.
-
----
-</details>
-
-#####  Package rail fence is a classical type of transposition cipher ref : https://en.wikipedia.org/wiki/Rail_fence_cipher
-
----
-##### Functions:
-
-1. [`Encrypt`](.cipher/railfence/railfence.go#L7):  Encrypt encrypts a message using rail fence cipher
-2. [`Decrypt`](.cipher/railfence/railfence.go#L44):  decrypt decrypts a message using rail fence cipher
-3. [`TestEncrypt`](.cipher/railfence/railfence_test.go#L7) Test function for Encrypt
-4. [`TestDecrypt`](.cipher/railfence/railfence_test.go#L50) Test function for Decrypt
 
 ---
 </details>
